@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Fredericka+the+Great&family=Road+Rage&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Delicious+Handrawn&family=Dongle&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="js/app.js" defer></script>
+    <title>world</title>
+</head>
+
+<body>
+    <header class="container-fluid p-2">
+        <nav class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-auto p-0"><a id="id_logo" style="cursor: pointer;" class="text-dark h1"><i
+                            class="fa fa-globe" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-auto all">
+                    <a id="all">ALL</a>
+                    <a id="israel">ISRAEL</a>
+                    <a id="usa">USA</a>
+                    <a id="thailand">THAILAND</a>
+                    <a id="france">FRANCE</a>
+                </div>
+                <div class="col-lg-3 m-1">
+                    <select id="id_select_country" class="form-select" aria-label="Default select example">
+                        <option value="0" selected>Choose Country</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <input id="id_input" type="text" class="form-control" placeholder="Search country...">
+                    <button id="id_Search" class="btn btn-dark ms-2">Search</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="container">
+        <div id="id_parent"></div>
+        </div>
+    </main>
+    <footer class="container-fluid p-2 ">
+        <div class="container">
+          <div class="col-12 row text-center">
+            <p class="m-0 p-0">
+              &copy; Hadasa Zwiebel | Full Stack | Developer | <span id="id_year"> 2023 </span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

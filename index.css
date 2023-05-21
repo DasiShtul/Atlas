@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+  
+    font-family: 'Alkatra', cursive;
+
+}
+header{
+    background: blue;
+
+}
+header .all a:hover {
+    color: white !important;
+}
+header .all a{
+    color: white;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+.preImg{
+    height: 250px;
+}
+.preBox{
+    cursor: pointer;
+    min-height: 380px;
+}
+
+main{
+    background-image: url(main.jpg);
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+footer{
+    background: gray;
+    height: 100px;
+}
+@media (max-width:768px) {
+    .preBox {
+        min-width: 75%;
+        min-height: 350px;
+    }
+
+    .preImg {
+        height: 180px;
+
+    }
+}
+
+@media (max-width:550px) {
+    .preBox {
+        min-height: 300px;
+    }
+}
+
+@media (max-width:350px) {
+    .preBox {
+        min-height: 200px;
+    }
+}
